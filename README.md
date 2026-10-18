@@ -310,7 +310,8 @@ GitHub 发布、About 文案、Topics 和 Release 步骤见 [docs/GITHUB_UPLOAD.
 
 ## 版本历史
 
-版本变化与迁移说明见 [CHANGELOG.md](CHANGELOG.md)。
+版本变化与迁移说明见 [CHANGELOG.md](CHANGELOG.md)。由DeepSeek Harness辅助开发
+ps：本人不是计算机专业的学生，有错误请多包涵
 
 ## License
 
