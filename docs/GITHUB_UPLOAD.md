@@ -41,9 +41,35 @@ ocr-excel-finder
 
 ---
 
-## 3. 用 Git 上传（如果电脑已安装 Git）
+## 3. 上传项目
 
-在 `识文寻表` 文件夹中打开 PowerShell：
+### 方式 A：GitHub Desktop（推荐）
+
+本项目已经初始化本地 Git 仓库，并完成了初始提交，可以直接发布。
+
+1. 打开 **GitHub Desktop**，登录 GitHub 账号。
+2. 菜单 **File → Add local repository…**。
+3. 选择项目文件夹：
+
+   ```text
+   D:\works\work dsh\识文寻表
+   ```
+
+4. 确认左侧 **Current Repository** 显示 `识文寻表`，分支为 `main`。
+5. 点击窗口顶部的 **Publish repository**。
+6. 填写：
+   - **Name**：`shiwen-xunbiao`
+   - **Description**：复制下面的仓库简介
+   - 如需公开项目，取消勾选 **Keep this code private**
+7. 点击 **Publish repository**。
+
+发布完成后点击 **View on GitHub** 打开仓库。
+
+> GitHub Desktop 只能发布代码，不能创建 Release 或上传 Release 附件。Release 需要继续在网页上操作（见第 5 节）。
+
+### 方式 B：命令行
+
+如果仓库还没有初始化：
 
 ```powershell
 git init
@@ -54,16 +80,23 @@ git remote add origin https://github.com/<your-name>/shiwen-xunbiao.git
 git push -u origin main
 ```
 
-如果还没安装 Git，可从 <https://git-scm.com/download/win> 下载。
+如果已经完成初始提交，只需要：
 
-### 没有 Git，也可以网页上传
+```powershell
+git remote add origin https://github.com/<your-name>/shiwen-xunbiao.git
+git push -u origin main
+```
+
+如果还没安装 Git，可从 <https://git-scm.com/download/win> 下载。GitHub Desktop 也自带 Git。
+
+### 方式 C：网页上传
 
 1. 在 GitHub 仓库页面点击 **Add file → Upload files**。
 2. 把 `识文寻表` 文件夹内的文件拖进去（保留目录结构）。
 3. 确认没有 `.cache`、`.config`、`__pycache__`、`.zip`。
 4. Commit changes。
 
-> 网页上传对隐藏文件不友好，建议优先使用 Git。
+> 网页上传对隐藏文件不友好，建议优先使用 GitHub Desktop。
 
 ---
 
