@@ -1,0 +1,23 @@
+* text=auto
+
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.txt text eol=lf
+*.toml text eol=lf
+
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.vbs binary
+
+*.ico binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.xlsx binary
+*.xlsm binary
+*.xls binary
+*.exe binary
